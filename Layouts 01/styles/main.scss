@@ -1,0 +1,11 @@
+@use "./normalize";
+@use "./fonts";
+@use "./variables";
+@use "./utils";
+@use "./globals";
+
+@use "./blocks/header";
+@use "./blocks/features";
+@use "./blocks/offers";
+@use "./blocks/gift";
+@use "./blocks/combo";
