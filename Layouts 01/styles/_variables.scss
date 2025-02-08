@@ -1,0 +1,54 @@
+@use "./helpers/" as *;
+
+:root {
+  --color-primary: #415167;
+  --color-accent: #c7a17a;
+  --color-dark: #151d28;
+  --color-light: #edf0f5;
+  --color-white: #ffffff;
+  --color-h2: #232c38;
+  --color-bg: #f9fbff;
+
+  --font-main: "Nunito";
+  --font-title: "Montserrat";
+
+  --fw-900: 900;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-300: 300;
+
+  --lh-normal: 1.2;
+  --lh-150: 150%;
+  --lh-137: 137%;
+  --lh-130: 130%;
+  --lh-120: 120%;
+  --lh-117: 117%;
+  --lh-113: 113%;
+
+  --fs-italic: italic;
+
+  --box-shadow: 0px 4px 24px 0px rgba(205, 205, 205, 0.5);
+
+  --bg-offer: linear-gradient(
+    90deg,
+    rgba(65, 81, 103, 1) 30%,
+    rgba(249, 251, 255, 1) 30%
+  );
+  --bg-combo: linear-gradient(
+    90deg,
+    rgba(249, 251, 255, 1) 70%,
+    rgba(65, 81, 103, 1) 70%
+  );
+  --bg-header: linear-gradient(
+    90deg,
+    rgba(249, 251, 255, 1) 50%,
+    rgba(65, 81, 103, 1) 50%
+  );
+  --bg-gift: linear-gradient(
+    90deg,
+    rgba(237, 240, 245, 1) 70%,
+    rgba(249, 251, 255, 1) 70%
+  );
+
+  --transition-duration: 0.2s;
+}

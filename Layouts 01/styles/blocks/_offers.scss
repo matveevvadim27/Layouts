@@ -1,0 +1,116 @@
+@use "../helpers/" as *;
+
+.offers {
+  overflow: hidden;
+  background: var(--bg-offer);
+  position: relative;
+
+  @include tablet-s {
+    background: var(--color-white);
+  }
+  &__container {
+    position: relative;
+    max-width: rem(1164);
+    margin-inline: auto;
+    clip-path: inset(0 -200px 0 0);
+    padding: fluid(90, 50) rem(15) fluid(127, 90);
+  }
+  &__title {
+    margin-bottom: rem(72);
+  }
+  &__slider {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    @include tablet-s {
+      justify-content: space-between;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -50%;
+      top: 0;
+      left: 100%;
+      bottom: 0;
+      background: var(--color-white);
+      opacity: 0.5;
+      z-index: 100;
+    }
+  }
+  &__slider-line {
+    position: relative;
+    display: flex;
+    gap: rem(30);
+    transition: all ease 1s;
+    z-index: 100;
+  }
+  &__slide {
+    max-width: rem(560);
+    min-width: rem(294);
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    @include tablet-s {
+      max-width: rem(294);
+    }
+  }
+  &__item {
+    @include tablet-s {
+      flex-direction: column;
+    }
+    display: flex;
+    box-shadow: var(--box-shadow);
+  }
+
+  &__img {
+    max-width: rem(235);
+    background-color: var(--color-light);
+    @include tablet-s {
+      max-width: 100%;
+      min-height: rem(320);
+    }
+  }
+
+  &__about {
+    @include tablet-s {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: rem(42) 0 rem(42) 0;
+    }
+    width: rem(300);
+    padding: rem(42) 0 rem(42) rem(40);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    max-height: rem(256);
+  }
+
+  &__price {
+    color: var(--color-accent);
+    margin-bottom: rem(8);
+    font-size: 20px;
+    font-weight: var(--fw-600);
+  }
+  &__name {
+    margin-bottom: rem(24);
+  }
+  &__description {
+    font-weight: var(--fw-300);
+    margin-bottom: rem(38);
+  }
+  &__slider-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(48);
+    height: rem(48);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 45.5%;
+    right: 2%;
+    z-index: 150;
+  }
+}

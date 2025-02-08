@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/script.js" type="module" defer></script>
+    <title>Revo</title>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__container container">
+        <div class="header__left">
+          <div class="header__left-menu">
+            <a href="#" class="header__left-logo">
+              <img
+                src="/img/revo_logo.png"
+                alt="Logo"
+                class="header__left-img"
+              />
+            </a>
+            <button
+              class="header__left-burger-button visible-laptop"
+              data-js-burger
+            >
+              <span class="burger-line first-line"></span>
+              <span class="burger-line middle-line"></span>
+              <span class="burger-line last-line"></span>
+            </button>
+          </div>
+          <h1 class="header__left-title">
+            your<br />
+            <span class="title-accent">personalized</span><br />
+            coffee
+          </h1>
+        </div>
+        <div class="header__center">
+          <video
+            playsinline
+            loop
+            poster="/img/Poster.png"
+            class="header__center-video"
+            data-js-video
+          >
+            <source src="/video/coffee-720.mp4" type="video/mp4" />
+          </video>
+          <button class="header__center-play" data-js-play-button>
+            <img
+              src="/icons/Triangle.png"
+              alt="Play"
+              class="header__center-triangle"
+            />
+          </button>
+        </div>
+        <div class="header__right" data-js-overlay>
+          <button class="header__basket">
+            <img src="/img/header__basket.png" alt="Basket" />
+            <span class="count">2</span>
+          </button>
+          <nav class="header__right-nav">
+            <ul class="header__right-list">
+              <h5 class="header__right-title">TRANG CHỦ</h5>
+              <li class="header__right-item">
+                <a href="" class="header__right-link">COFFEE</a>
+              </li>
+              <li class="header__right-item">
+                <a href="" class="header__right-link">PHIN MẠ MÀU</a>
+              </li>
+              <li class="header__right-item">
+                <a href="" class="header__right-link">COMBO PHIN PHÊ</a>
+              </li>
+              <li class="header__right-item">
+                <a href="" class="header__right-link">GIFTSET</a>
+              </li>
+              <li class="header__right-item">
+                <a href="" class="header__right-link">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="features">
+        <h4 class="features__accent">Your Personalized Coffee</h4>
+        <h2 class="features__title">COFFEE BUILD YOUR BASE</h2>
+        <div class="features__card">
+          <div class="features__card-item">
+            <img
+              src="/img/Home.png"
+              alt="Nguồn gốc"
+              class="features__card-img"
+            />
+            <h3 class="features__card-title">Nguồn gốc</h3>
+            <p class="features__card-text">
+              Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn
+              quốc tế.
+            </p>
+          </div>
+          <div class="features__card-item">
+            <img
+              src="/img/IC.png"
+              alt="Chất lượng"
+              class="features__card-img"
+            />
+            <h3 class="features__card-title">Chất lượng</h3>
+            <p class="features__card-text">
+              Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ
+              nhân cà phê.
+            </p>
+          </div>
+          <div class="features__card-item">
+            <img
+              src="/img/Cac.png"
+              alt="Các loại hạt"
+              class="features__card-img"
+            />
+            <h3 class="features__card-title">Các loại hạt</h3>
+            <p class="features__card-text">
+              70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green
+              bean.
+            </p>
+          </div>
+          <div class="features__card-item">
+            <img src="/img/Pha.png" alt="Pha chế" class="features__card-img" />
+            <h3 class="features__card-title">Pha chế</h3>
+            <p class="features__card-text">
+              Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và
+              nghiêm ngặt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="offers" data-js-offers>
+        <div class="offers__container">
+          <h4 class="offers__accent">Choose Your Favorite</h4>
+          <h2 class="offers__title">CHUẨN GU ĐÚNG VỊ</h2>
+          <div class="offers__slider" data-js-offers-slider>
+            <button class="offers__slider-btn" data-js-offers-button>
+              <svg
+                class="arrow"
+                width="24"
+                height="17"
+                viewBox="0 0 14 8"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0881 8L9.43182 7.34375L12.1335 4.65057H0.5V3.71307H12.1335L9.43182 1.01136L10.0881 0.363636L13.9062 4.18182L10.0881 8Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <div class="offers__slider-line" data-js-offers-line>
+              <div class="offers__slide" data-js-offers-slide>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/morning-yellow.png"
+                    alt="REVO Morning"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">99.000</p>
+                    <h3 class="offers__name">REVO Morning</h3>
+                    <p class="offers__description">đắng, hậu ngọt, hương hoa</p>
+                    <div class="offers__buttons">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/origin-orange.png"
+                    alt="REVO Origin"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">139.000</p>
+                    <h3 class="offers__name">REVO Origin</h3>
+                    <p class="offers__description">
+                      hậu ngọt, ít đắng, vị chua dâu
+                    </p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__slide" data-js-offers-slide>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/everyday.png"
+                    alt="REVO Everyday"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">85.000</p>
+                    <h3 class="offers__name">REVO Everyday</h3>
+                    <p class="offers__description">
+                      cân bằng, hậu đắng, vị chocolate
+                    </p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/damda.png"
+                    alt="REVO Đậm Đà"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">75.000</p>
+                    <h3 class="offers__name">REVO Đậm Đà</h3>
+                    <p class="offers__description">
+                      đậm đà, đắng, truyền thống
+                    </p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__slide" data-js-offers-slide>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/morning-red.png"
+                    alt="REVO Morning"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">99.000</p>
+                    <h3 class="offers__name">REVO Morning</h3>
+                    <p class="offers__description">đắng, hậu ngọt, hương hoa</p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/origin-green.png"
+                    alt="REVO Origin"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">139.000</p>
+                    <h3 class="offers__name">REVO Origin</h3>
+                    <p class="offers__description">
+                      hậu ngọt, ít đắng, vị chua dâu
+                    </p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__slide" data-js-offers-slide>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/morning-yellow.png"
+                    alt="REVO Morning"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">99.000</p>
+                    <h3 class="offers__name">REVO Morning</h3>
+                    <p class="offers__description">đắng, hậu ngọt, hương hoa</p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="offers__item">
+                  <img
+                    class="offers__img"
+                    src="/img/origin-orange.png"
+                    alt="REVO Origin"
+                  />
+                  <div class="offers__about">
+                    <p class="offers__price">139.000</p>
+                    <h3 class="offers__iname">REVO Origin</h3>
+                    <p class="offers__description">
+                      hậu ngọt, ít đắng, vị chua dâu
+                    </p>
+                    <div class="offers__box-btn">
+                      <button class="buy">MUA NGAY</button>
+                      <button class="about">CHI TIẾT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gift" data-js-gift>
+        <div class="gift__container">
+          <h4 class="gift__accent">Best Gift For Best Friend</h4>
+          <h2 class="gift__title">GIFTSET</h2>
+          <div class="gift__wrapper">
+            <img
+              src="/img/gift.png"
+              alt="Gift"
+              class="gift__img"
+              data-js-gift-img
+            />
+            <div class="gift__box">
+              <div class="gift__about">
+                <p class="gift__prace">285.000</p>
+                <h3 class="gift__name">Giftset "Cà phê phin Việt Nam"</h3>
+                <p class="gist__discription">
+                  Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được
+                  Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết
+                  học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự
+                  đam mê của người làm cà phê… tạo ra những tách cà phê tinh
+                  khiết chỉ dành riêng cho bạn.
+                </p>
+                <div class="gift__origin">
+                  <div class="gift__origin-place">
+                    <img
+                      src="/icons/IC_Mountain.png"
+                      alt="Mountain"
+                      class="gift__origin-img"
+                    />
+                    <div class="gift__origin-box-place">
+                      <p class="gift__origin-place-text">
+                        Loại hạt <br />
+                        <span class="gift__accent">Fine Robusta Blend</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="gift__origin-place">
+                    <img
+                      src="/icons/IC_coffee.png"
+                      alt="Coffee"
+                      class="gift__origin-img"
+                    />
+                    <div class="gift__origin-box-place">
+                      <p class="gift__origin-place-text">
+                        Độ cao <br />
+                        <span class="gift__accent">700 - 800m</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gift__buttons">
+                <button class="buy">MUA NGAY</button>
+                <button class="about">CHI TIẾT</button>
+              </div>
+            </div>
+            <div class="gift__accordion" data-js-buttons>
+              <button class="gift__accordion-buttons is-active" data-js-button>
+                1
+              </button>
+              <button class="gift__accordion-buttons" data-js-button>2</button>
+              <button class="gift__accordion-buttons" data-js-button>3</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="combo" data-js-combo>
+        <div class="combo__container">
+          <h4 class="combo__accent">Your Personalized Coffee</h4>
+          <h2 class="combo__title">COMBO PHIN PHÊ</h2>
+          <div class="combo__slider" data-js-slider>
+            <div class="combo__slider-line" data-js-slider-line>
+              <div class="combo__slide" data-js-slide>
+                <img
+                  src="/icons/combo-brown.png"
+                  alt="Combo"
+                  class="combo__slide-img"
+                />
+                <div class="combo__slide-about">
+                  <p class="combo__slide-price">
+                    147.000 <span class="combo__old-price">155.000</span>
+                  </p>
+                  <h3 class="combo__slide-title">Combo Revo Đậm Đà</h3>
+                  <p class="combo__slide-description">
+                    Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh
+                    táo làm việc...
+                  </p>
+                  <div class="combo__slide-buttons">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="about">CHI TIẾT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="combo__slide" data-js-slide>
+                <img
+                  src="/icons/combo-blue.png"
+                  alt="Combo"
+                  class="combo__slide-img"
+                />
+                <div class="combo__slide-about">
+                  <p class="combo__slide-price">
+                    156.000 <span class="combo__old-price">165.000</span>
+                  </p>
+                  <h3 class="combo__slide-title">Combo Revo Everyday</h3>
+                  <p class="combo__slide-description">
+                    Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và
+                    hương thơm...
+                  </p>
+                  <div class="combo__slide-buttons">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="about">CHI TIẾT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="combo__slide" data-js-slide>
+                <img
+                  src="/icons/combo-red.png"
+                  alt="Combo"
+                  class="combo__slide-img"
+                />
+                <div class="combo__slide-about">
+                  <p class="combo__slide-price">
+                    275.000 <span class="combo__old-price">260.000</span>
+                  </p>
+                  <h3 class="combo__slide-title">Combo Revo Honey</h3>
+                  <p class="combo__slide-description">
+                    Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến
+                    hạt Arabica...
+                  </p>
+                  <div class="combo__slide-buttons">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="about">CHI TIẾT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="combo__slide" data-js-slide>
+                <img
+                  src="/icons/combo-green.png"
+                  alt="Combo"
+                  class="combo__slide-img"
+                />
+                <div class="combo__slide-about">
+                  <p class="combo__slide-price">
+                    147.000 <span class="combo__old-price">155.000</span>
+                  </p>
+                  <h3 class="combo__slide-title">Combo Revo Đậm Đà</h3>
+                  <p class="combo__slide-description">
+                    Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh
+                    táo làm việc...
+                  </p>
+                  <div class="combo__slide-buttons">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="about">CHI TIẾT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="combo__slide" data-js-slide>
+                <img
+                  src="/icons/combo-brown.png"
+                  alt="Combo"
+                  class="combo__slide-img"
+                />
+                <div class="combo__slide-about">
+                  <p class="combo__slide-price">147.000 <span>155.000</span></p>
+                  <h3 class="combo__slide-title">Combo Revo Đậm Đà</h3>
+                  <p class="combo__slide-description">
+                    Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh
+                    táo làm việc...
+                  </p>
+                  <div class="combo__slide-buttons">
+                    <button class="buy">MUA NGAY</button>
+                    <button class="about">CHI TIẾT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="combo__slide-btn" data-js-next>
+            <svg
+              class="arrow"
+              width="24"
+              height="17"
+              viewBox="0 0 14 8"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0881 8L9.43182 7.34375L12.1335 4.65057H0.5V3.71307H12.1335L9.43182 1.01136L10.0881 0.363636L13.9062 4.18182L10.0881 8Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">© Revo Coffee Việt Nam - 2018</footer>
+  </body>
+</html>

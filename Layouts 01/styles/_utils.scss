@@ -1,0 +1,62 @@
+@use "./helpers/" as *;
+
+.container {
+  max-width: rem(1164);
+  margin-inline: auto;
+}
+
+.title-accent {
+  color: var(--color-bg);
+  background-color: var(--color-accent);
+  padding-inline: rem(15);
+  margin-left: rem(-15);
+}
+
+.buy {
+  padding: rem(10) rem(25);
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  transition-duration: var(--transition-duration);
+  border-radius: rem(19);
+  font-size: 16px;
+  font-weight: var(--fw-700);
+}
+
+.about {
+  border: none;
+  color: var(--color-dark);
+  font-size: 16px;
+  font-weight: var(--fw-700);
+}
+
+.arrow {
+  color: var(--color-white);
+}
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-laptop {
+  @include laptop-xl {
+    display: none !important;
+  }
+}
+
+.visible-laptop {
+  @include laptop-xl-above {
+    display: none !important;
+  }
+}

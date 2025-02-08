@@ -1,0 +1,98 @@
+@use "../helpers/" as *;
+
+.combo {
+  background: var(--bg-combo);
+  overflow: hidden;
+  @include tablet {
+    background: var(--color-white);
+  }
+  &__container {
+    position: relative;
+    max-width: rem(1164);
+    margin: auto;
+    padding: fluid(90, 50) rem(15) fluid(127, 90);
+    clip-path: inset(0 -200px 0 0);
+  }
+  &__slider {
+    position: relative;
+    margin-top: fluid(64, 50);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -50%;
+      top: 0;
+      left: 95%;
+      bottom: 0;
+      background: var(--color-primary);
+      opacity: 0.5;
+      backdrop-filter: blur(5px);
+      z-index: 150;
+    }
+  }
+
+  &__slider-line {
+    position: relative;
+    display: flex;
+    gap: rem(30);
+    transition: all ease 1s;
+    z-index: 100;
+  }
+
+  &__slide {
+    max-width: rem(360);
+    min-width: rem(294);
+    position: relative;
+    z-index: 100;
+
+    &-img {
+      width: 100%;
+      background: var(--color-light);
+    }
+    &-about {
+      padding: rem(40) rem(42) rem(40);
+      background: var(--color-white);
+      display: flex;
+      flex-direction: column;
+      gap: rem(12);
+    }
+
+    &-price {
+      color: var(--color-accent);
+      font-size: 20px;
+      font-weight: var(--fw-600);
+    }
+
+    &-description {
+      font-weight: var(--fw-300);
+      margin-bottom: rem(12);
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__slide-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(48);
+    height: rem(48);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 51%;
+    right: 5%;
+    z-index: 200;
+  }
+  &__old-price {
+    color: var(--color-dark);
+    margin-left: rem(10);
+    font-size: 14px;
+    font-style: var(--fs-italic);
+    font-weight: var(--fw-300);
+    text-decoration: line-through;
+  }
+}
